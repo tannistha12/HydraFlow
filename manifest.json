@@ -1,0 +1,10 @@
+{
+    "name": "HydraFlow",
+    "version": "1.0.0",
+    "description": "Track your water intake",
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "HydraFlow"
+    },
+    "manifest_version": 3
+}

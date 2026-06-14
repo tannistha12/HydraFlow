@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 20px;
+    width: 280px;
+    font-family: Arial, sans-serif;
+    background: #f4f8fb;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2196f3;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #2196f3;
+    color: white;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
