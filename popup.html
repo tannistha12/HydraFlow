@@ -12,10 +12,29 @@
     <div class="container">
         <h1>💧 HydraFlow</h1>
         <p>Today's Water Intake</p>
-        <h2 id="waterAmount">0 ml</h2>
+
+        <div class="stats">
+            <p>🎯 Goal: <span id="goal">3000 ml</span></p>
+            <p>📊 Remaining: <span id="remaining">3000 ml</span></p>
+            <p>📈 Progress: <span id="progress">0%</span></p>
+            <p id="goalMetMessage" style="color: #08300a; font-weight: bold; display: none;">Goal Achieved! 🎉</p>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="progress-bar-fill" id="progressBarFill"></div>
+        </div>
+        <p class="progress-text" id="progressPercent">0% Complete</p>
+
+        <div class="large-number">
+            <span id="waterAmount">0</span>
+            <span class="large-unit">ml</span>
+        </div>
+
         <button id="addWaterBtn">
             Drink 250 ml
         </button>
+
+        <button id="resetBtn">Reset</button>
     </div>
     <script src="popup.js"></script>
 </body>
