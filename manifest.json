@@ -7,5 +7,12 @@
     "default_title": "HydraFlow"
   },
   "manifest_version": 3,
-  "permissions": ["storage"]
+  "permissions": [
+    "storage",
+    "notifications",
+    "alarms"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
 }
