@@ -126,5 +126,16 @@ resetButton.addEventListener('click', () => {
     }
 });
 
+// Test notification button
+const testNotificationBtn = document.getElementById('testNotificationBtn');
+if (testNotificationBtn) {
+    testNotificationBtn.addEventListener('click', () => {
+        chrome.runtime.sendMessage({ action: 'testNotification' }, (response) => {
+            if (response && response.success) {
+                alert('Test notification sent! Check your system notifications.');
+            }
+        });
+    });
+}
 // Load saved value when popup opens
 loadSavedValue();
